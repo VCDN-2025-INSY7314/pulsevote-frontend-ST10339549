@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <h2>Welcome to PulseVote</h2>
-      <pre style={{background:'#f6f8fa', padding:'8px', borderRadius:6}}>
+    <pre style={{background:'#f6f8fa', padding:'8px', borderRadius:6, color:'#000'}}>
         {api ? JSON.stringify(api, null, 2) : 'Loading API...'}
       </pre>
     </>
