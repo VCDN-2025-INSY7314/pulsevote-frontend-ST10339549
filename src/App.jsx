@@ -6,7 +6,7 @@ function App() {
   const [api, setApi] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/test')  // CORS is enabled on backend
+  axios.get('https://localhost:5000/test')  // CORS is enabled on backend
       .then(res => setApi(res.data))
       .catch(() => setApi({ status: 'error' }));
   }, []);
